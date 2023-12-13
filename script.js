@@ -1,4 +1,42 @@
 
+function setTheme(){
+     const color1 = 'red';
+     const color2 = 'green';
+     const color3 = 'yellow';
+
+     const button =  document.querySelector('.theme');
+     let root = document.querySelector(':root');
+     var a =0 
+          // let i =0;
+     // for(i = 0; i <= 3;i++){
+     button.addEventListener('click',()=>{
+     a = a+1;
+
+          if (a ==3){
+               root.style.setProperty('--main-color',`${color1}`);
+               // root.style.setProperty('--text-color',`yellow`);
+          }
+          else if(a==2){
+               root.style.setProperty('--main-color',`${color2}`);
+               // root.style.setProperty('--text-color',`#0ef`);
+          }
+          else if(a==1){
+               root.style.setProperty('--main-color',`${color3}`);
+               // root.style.setProperty('--text-color',`pink`);
+          }
+          else{
+            a =0;
+          }
+               
+    })      
+   
+}
+setTheme();
+
+
+
+
+
 let menuIcon = document.querySelector('#menu-icon');
 let nav = document.querySelector('.nav');
 

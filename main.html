@@ -27,7 +27,7 @@
             --main-color:#0ef;
 
         }
-        
+                
 html{
     font-size: 62.5%;
     overflow-y: auto;
@@ -421,9 +421,14 @@ margin-bottom: 5rem;
     .footer{
         padding: 2rem 3%;
     }
+    
 }
 @media (max-width: 768px)
 {
+    .home-content{
+        position: relative;
+        top: 60px;
+    }
     #menu-icon{
         display: block;
     }
@@ -465,8 +470,11 @@ margin-bottom: 5rem;
     margin-top: 4rem;
    }
 }
-
-
+.theme{
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    padding: 3px;
+}
 
 
 
@@ -494,7 +502,8 @@ margin-bottom: 5rem;
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#home" class="logo">Portfolio</a>
+        <a href="#" type="button" class="theme"><img src="https://i.postimg.cc/TwgqZcTz/theme-10.png" alt="theme" width="30px"></a>
       <i class='bx bx-menu' id="menu-icon"></i>  
         <nav class="nav">
         <a href="#home" class="active">Home</a>
@@ -502,7 +511,7 @@ margin-bottom: 5rem;
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-
+            
     </nav>
    </header>
 
@@ -638,14 +647,7 @@ margin-bottom: 5rem;
                     <a href="#"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
-            <div class="skills-box">
-                <img src="react.png" alt="">
-                <div class="skills-layer">
-                    <h4>Ract.JS</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quae.</p>
-                    <a href="#"><i class='bx bxl-react'></i></a>
-                </div>
-            </div>
+            
             <div class="skills-box">
                 <img src="sql.png" alt="">
                 <div class="skills-layer">
